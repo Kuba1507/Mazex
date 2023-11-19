@@ -1,8 +1,59 @@
+@use 'colors' as *;
+
 @media (min-width: 768px) {
 	.mobile-nav {
 		&__item {
 			padding: 2em 2.5em;
 			font-size: 2.75rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.mobile-nav {
+		display: none;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	.navbar {
+		height: 90px;
+
+		.wrapper {
+			justify-content: space-between;
+
+			.logo {
+				&__image {
+					width: 75px;
+					height: 75px;
+				}
+			}
+
+			.desktop-nav {
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				height: 100%;
+
+				&__item {
+					display: flex;
+					align-items: center;
+					height: 100%;
+					font-family: 'Antonio', sans-serif;
+					font-size: 2rem;
+					padding: 0 1.5em;
+					color: $dark;
+					text-decoration: none;
+					transition: background-color 0.3s, color 0.3s;
+
+					&:hover {
+						background-color: $dark;
+						color: $orange-light;
+					}
+				}
+			}
 		}
 	}
 }
