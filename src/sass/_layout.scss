@@ -1,0 +1,15 @@
+@use 'fonts' as *;
+
+html {
+	font-size: 62.5%;
+	scroll-padding-top: 50px;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 1.6rem;
+	// background-color: $body-bg;
+	overflow-x: hidden;
+}
+
+
