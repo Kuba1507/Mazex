@@ -79,13 +79,16 @@ body {
 
 		.logo {
 			padding: 0.25em 1em;
+			transition: transform 0.3s;
 
 			&__image {
 				width: 65px;
 				height: 65px;
 			}
 
-			
+			&:hover {
+				transform: scale(0.9);
+			}
 		}
 
 		.desktop-nav {
