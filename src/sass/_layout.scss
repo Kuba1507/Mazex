@@ -1,8 +1,9 @@
 @use 'fonts' as *;
+@use 'colors' as *;
 
 html {
 	font-size: 62.5%;
-	scroll-padding-top: 50px;
+	// scroll-padding-top: 50px;
 	scroll-behavior: smooth;
 }
 
@@ -11,5 +12,3 @@ body {
 	// background-color: $body-bg;
 	overflow-x: hidden;
 }
-
-

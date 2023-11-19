@@ -4,32 +4,36 @@
 	font-family: 'Montserrat-extra-light';
 	src: url('/dist/fonts/montserrat-extralight-webfont.woff2') format('woff2'),
 		url('/dist/fonts/montserrat-extralight-webfont.woff') format('woff');
-	font-weight: normal;
+	font-weight: 200;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
 	font-family: 'Montserrat-light';
 	src: url('/dist/fonts/montserrat-light-webfont.woff2') format('woff2'),
 		url('/dist/fonts/montserrat-light-webfont.woff') format('woff');
-	font-weight: normal;
+	font-weight: 300;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
 	font-family: 'Montserrat';
 	src: url('/dist/fonts/montserrat-regular-webfont.woff2') format('woff2'),
 		url('/dist/fonts/montserrat-regular-webfont.woff') format('woff');
-	font-weight: normal;
+	font-weight: 400;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
 	font-family: 'Montserrat-bold';
 	src: url('/dist/fonts/montserrat-semibold-webfont.woff2') format('woff2'),
 		url('/dist/fonts/montserrat-semibold-webfont.woff') format('woff');
-	font-weight: normal;
+	font-weight: 700;
 	font-style: normal;
+	font-display: swap;
 }
 
 //Antonio
@@ -38,32 +42,36 @@
 	font-family: 'Antonio-extra-light';
 	src: url('/dist/fonts/antonio-extralight-webfont.woff2') format('woff2'),
 		url('/dist/fonts/antonio-extralight-webfont.woff') format('woff');
-	font-weight: normal;
+	font-weight: 200;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
 	font-family: 'Antonio-light';
 	src: url('/dist/fonts/antonio-light-webfont.woff2') format('woff2'),
 		url('/dist/fonts/antonio-light-webfont.woff') format('woff');
-	font-weight: normal;
+	font-weight: 300;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
 	font-family: 'Antonio';
 	src: url('/dist/fonts/antonio-regular-webfont.woff2') format('woff2'),
 		url('/dist/fonts/antonio-regular-webfont.woff') format('woff');
-	font-weight: normal;
+	font-weight: 400;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
 	font-family: 'Antonio-bold';
 	src: url('/dist/fonts/antonio-semibold-webfont.woff2') format('woff2'),
 		url('/dist/fonts/antonio-semibold-webfont.woff') format('woff');
-	font-weight: normal;
+	font-weight: 700;
 	font-style: normal;
+	font-display: swap;
 }
 
 //Loew heavy
@@ -72,6 +80,7 @@
 	font-family: 'Loew';
 	src: url('/dist/fonts/loew-heavy-webfont.woff2') format('woff2'),
 		url('/dist/fonts/loew-heavy-webfont.woff') format('woff');
-	font-weight: normal;
+	font-weight: 700;
 	font-style: normal;
+	font-display: swap;
 }
