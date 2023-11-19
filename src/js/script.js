@@ -1,3 +1,4 @@
+const body = document.querySelector('body')
 const burgerBtn = document.querySelector('.hamburger')
 const mobileNav = document.querySelector('.mobile-nav')
 const mobileNavItems = document.querySelectorAll('.mobile-nav__item')
@@ -5,6 +6,7 @@ const mobileNavItems = document.querySelectorAll('.mobile-nav__item')
 const handleNav = () => {
 	mobileNav.classList.toggle('show-nav')
 	burgerBtn.classList.toggle('is-active')
+	body.classList.toggle('disable-scroll')
 }
 
 const closeNav = () => {
