@@ -12,3 +12,23 @@ body {
 	// background-color: $body-bg;
 	overflow-x: hidden;
 }
+
+//header
+.header {
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 80px;
+		background-color: $orange-light;
+
+		&__logo {
+			padding: 0 1em;
+
+			&-image {
+				width: 65px;
+				height: 65px;
+			}
+		}
+	}
+}
