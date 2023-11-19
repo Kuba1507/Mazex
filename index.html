@@ -10,19 +10,32 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="navbar">
-            <a href="#" class="navbar__logo">
-                <img src="dist/img/logo.png" alt="Logo firmy MAZEX" class="navbar__logo-image">
+    <nav class="mobile-nav">
+        <a href="#" class="mobile-nav__item">Strona główna</a>
+        <a href="#" class="mobile-nav__item">O firmie</a>
+        <a href="#" class="mobile-nav__item">Galeria</a>
+        <a href="#" class="mobile-nav__item">Kontakt</a>
+    </nav>
+    <button class="hamburger hamburger--stand" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    <div class="navbar">
+        <div class="wrapper">
+            <a href="#" class="logo">
+                <img src="dist/img/logo.png" alt="Logo firmy MAZEX" class="logo__image">
             </a>
-
-            <button class="hamburger hamburger--stand" type="button">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
+            <nav class="desktop-nav">
+                <a href="#" class="desktop-nav__item">Strona główna</a>
+                <a href="#" class="desktop-nav__item">O firmie</a>
+                <a href="#" class="desktop-nav__item">Galeria</a>
+                <a href="#" class="desktop-nav__item">Kontakt</a>
+            </nav>
         </div>
-    </header>
+    </div>
+
+
 
     <script src="dist/js/script.min.js"></script>
 </body>
