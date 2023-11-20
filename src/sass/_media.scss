@@ -42,43 +42,46 @@
 		.aboutus {
 			.wrapper {
 				.aboutus-box {
-					position: relative;
+					align-items: center;
 
-					&__first-text,
-					&__second-text {
-						font-size: 2.2rem;
-					}
+					.aboutus-description {
+						&__first-text,
+						&__second-text {
+							font-size: 1.9rem;
+						}
 
-					&__first-text {
-						margin-bottom: 1.5em;
-					}
-
-					&__second-text {
-						&-list {
-							li {
-								font-size: 2rem;
+						&__second-text {
+							&-list {
+								li {
+									font-size: 1.75rem;
+								}
 							}
 						}
 					}
 
-					&__first-image,
-					&__second-image {
-						box-shadow: none;
-					}
+					.aboutus-images {
+						position: relative;
+						flex-direction: row;
+						justify-content: flex-start;
+						margin-top: 2em;
+						width: 75%;
 
-					&__first-image {
-						width: 400px;
-						order: 1;
-					}
+						&__first-image,
+						&__second-image {
+							box-shadow: none;
+						}
 
-					&__second-image {
-						position: absolute;
-						bottom: -5em;
-						right: 0;
-						width: 500px;
-						border-top: 20px solid $pure-white;
-						border-left: 20px solid $pure-white;
-						order: 2;
+						&__first-image {
+							width: 400px;
+						}
+
+						&__second-image {
+							position: absolute;
+							right: 0;
+							bottom: -10em;
+							border-top: 15px solid $pure-white;
+							border-left: 15px solid $pure-white;
+						}
 					}
 				}
 			}
@@ -166,6 +169,47 @@
 			.heading-box,
 			.cta-button {
 				margin-right: 1.5em;
+			}
+		}
+	}
+
+	main {
+		.section {
+			padding: 4em 1.5em;
+		}
+
+		.section-title {
+			font-size: 3rem;
+		}
+
+		.aboutus {
+			.wrapper {
+				.aboutus-box {
+					flex-direction: row;
+					align-items: flex-start;
+
+					.aboutus-description {
+						flex: 1 0 0;
+					}
+
+					.aboutus-images {
+						flex: 1.2 0 0;
+						justify-content: flex-start;
+						align-items: flex-start;
+						margin-top: 0;
+						margin-left: 3em;
+
+						&__first-image {
+							margin-top: 0;
+							width: 250px;
+						}
+
+						&__second-image {
+							right: 3em;
+							width: 400px;
+						}
+					}
+				}
 			}
 		}
 	}

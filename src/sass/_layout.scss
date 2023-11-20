@@ -212,38 +212,54 @@ body {
 			flex-direction: column;
 			margin-top: 2em;
 
-			&__first-text,
-			&__second-text {
-				font-family: 'Montserrat';
-				font-size: 2rem;
-				color: $dark;
-				line-height: 1.5em;
-			}
-
-			// &__first-text {
-				
-			// }
-
-			&__second-text {
-				font-weight: bold;
-
-				&-list {
+			.aboutus-description {
+				&__first-text,
+				&__second-text {
 					font-family: 'Montserrat';
-					margin-top: 0.75em;
-					margin-left: 1em;
+					font-size: 1.7rem;
+					color: $dark;
+					line-height: 1.5em;
+				}
 
-					li {
-						margin-top: 0.5em;
-						line-height: 1.5em;
-						font-size: 1.8rem;
+				&__first-text {
+					margin-bottom: 1em;
+				}
+
+				&__second-text {
+					font-weight: bold;
+
+					&-list {
+						font-family: 'Montserrat';
+						margin-top: 0.75em;
+						margin-left: 1em;
+
+						li {
+							margin-top: 0.5em;
+							line-height: 1.5em;
+							font-size: 1.6rem;
+						}
 					}
 				}
 			}
 
-			&__first-image,
-			&__second-image {
-				margin: 2.5em 0;
-				box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+			.aboutus-images {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				&__first-image,
+				&__second-image {
+					width: 80%;
+					box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+				}
+
+				&__first-image {
+					margin-top: 2em;
+				}
+
+				&__second-image {
+					margin-top: 1em;
+				}
 			}
 		}
 	}
