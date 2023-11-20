@@ -219,18 +219,32 @@ body {
 			&__first-text,
 			&__second-text {
 				font-family: "Montserrat";
-				color: $dark;
-			}
-
-			&__first-text {
 				font-size: 2rem;
+				color: $dark;
 				line-height: 1.5em;
 			}
 
+			&__first-text {
+			}
+
 			&__second-text {
+				font-weight: bold;
+
 				&-list {
-					font-family: "Montserrat-light";
+					font-family: "Montserrat";
+					margin-top: 0.75em;
+					margin-left: 1em;
+
+					li {
+						margin-top: 0.5em;
+						line-height: 1.5em;
+						font-size: 1.8rem;
+					}
 				}
+			}
+
+			&__first-image {
+				margin: 2em 0;
 			}
 		}
 	}
