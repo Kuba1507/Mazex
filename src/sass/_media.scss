@@ -1,4 +1,4 @@
-@use "colors" as *;
+@use 'colors' as *;
 
 @media (min-width: 768px) {
 	.mobile-nav {
@@ -25,6 +25,62 @@
 			.cta-button {
 				border-radius: 25px;
 				padding: 1em 2em;
+			}
+		}
+	}
+
+	main {
+		.section-title {
+			margin-left: 0.5em;
+			font-size: 2.8rem;
+
+			&::after {
+				left: -15px;
+			}
+		}
+
+		.aboutus {
+			.wrapper {
+				.aboutus-box {
+					position: relative;
+
+					&__first-text,
+					&__second-text {
+						font-size: 2.2rem;
+					}
+
+					&__first-text {
+						margin-bottom: 1.5em;
+					}
+
+					&__second-text {
+						&-list {
+							li {
+								font-size: 2rem;
+							}
+						}
+					}
+
+					&__first-image,
+					&__second-image {
+						box-shadow: none;
+					}
+
+					&__first-image {
+						width: 400px;
+						order: 1;
+					}
+
+					&__second-image {
+						position: absolute;
+						bottom: -5em;
+						right: 0;
+						width: 500px;
+						border-top: 20px solid $pure-white;
+						border-left: 20px solid $pure-white;
+						order: 2;
+					}
+				}
 			}
 		}
 	}
@@ -62,7 +118,7 @@
 					display: flex;
 					align-items: center;
 					height: 100%;
-					font-family: "Antonio", sans-serif;
+					font-family: 'Antonio', sans-serif;
 					font-size: 2rem;
 					padding: 0 1.5em;
 					color: $dark;
@@ -80,7 +136,7 @@
 
 	.header {
 		height: 600px;
-		background-image: url("../img/hero-img-desktop.jpg");
+		background-image: url('../img/hero-img-desktop.jpg');
 
 		.wrapper {
 			align-items: flex-end;

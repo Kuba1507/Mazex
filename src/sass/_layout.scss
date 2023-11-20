@@ -1,5 +1,5 @@
-@use "fonts" as *;
-@use "colors" as *;
+@use 'fonts' as *;
+@use 'colors' as *;
 
 html {
 	font-size: 62.5%;
@@ -30,11 +30,7 @@ body {
 	width: 65%;
 	height: 100vh;
 	background: rgb(233, 80, 25);
-	background: linear-gradient(
-		128deg,
-		rgba(233, 80, 25, 1) 0%,
-		rgba(239, 124, 22, 1) 100%
-	);
+	background: linear-gradient(128deg, rgba(233, 80, 25, 1) 0%, rgba(239, 124, 22, 1) 100%);
 	box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 	transform: translateX(650px);
 	transition: 0.4s;
@@ -43,7 +39,7 @@ body {
 	&__item {
 		padding: 1.75em 1.5em;
 		width: 100%;
-		font-family: "Antonio-light", sans-serif;
+		font-family: 'Antonio-light', sans-serif;
 		font-size: 2.25rem;
 		color: $dark;
 		text-decoration: none;
@@ -108,7 +104,7 @@ body {
 	position: relative;
 	margin-top: 80px;
 	height: 300px;
-	background-image: url("../img/hero-img-mobile.jpg");
+	background-image: url('../img/hero-img-mobile.jpg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -128,7 +124,7 @@ body {
 
 			&__name,
 			&__heading {
-				font-family: "Loew", sans-serif;
+				font-family: 'Loew', sans-serif;
 			}
 
 			&__name {
@@ -155,7 +151,7 @@ body {
 
 		.cta-button {
 			padding: 0.8em 1.5em;
-			font-family: "Montserrat-bold", sans-serif;
+			font-family: 'Montserrat-bold', sans-serif;
 			font-size: 1.6rem;
 			color: $dark;
 			border: none;
@@ -195,11 +191,11 @@ body {
 .section-title {
 	position: relative;
 	margin-left: 0.25em;
-	font-family: "Antonio-light", sans-serif;
+	font-family: 'Antonio-light', sans-serif;
 	font-size: 2.6rem;
 
 	&::after {
-		content: "";
+		content: '';
 		position: absolute;
 		bottom: 0;
 		left: -10px;
@@ -218,20 +214,21 @@ body {
 
 			&__first-text,
 			&__second-text {
-				font-family: "Montserrat";
+				font-family: 'Montserrat';
 				font-size: 2rem;
 				color: $dark;
 				line-height: 1.5em;
 			}
 
-			&__first-text {
-			}
+			// &__first-text {
+				
+			// }
 
 			&__second-text {
 				font-weight: bold;
 
 				&-list {
-					font-family: "Montserrat";
+					font-family: 'Montserrat';
 					margin-top: 0.75em;
 					margin-left: 1em;
 
@@ -243,8 +240,10 @@ body {
 				}
 			}
 
-			&__first-image {
-				margin: 2em 0;
+			&__first-image,
+			&__second-image {
+				margin: 2.5em 0;
+				box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 			}
 		}
 	}
