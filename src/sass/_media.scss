@@ -77,4 +77,40 @@
 			}
 		}
 	}
+
+	.header {
+		height: 600px;
+		background-image: url("../img/hero-img-desktop.jpg");
+
+		.wrapper {
+			align-items: flex-end;
+			justify-content: center;
+			gap: 4em;
+
+			.heading-box {
+				align-items: flex-end;
+
+				&__name {
+					font-size: 6rem;
+				}
+
+				&__heading {
+					padding: 0;
+					font-size: 4rem;
+					text-align: right;
+				}
+			}
+
+			.cta-button {
+				padding: 1em 2em;
+				border-radius: 30px;
+				font-size: 2rem;
+			}
+
+			.heading-box,
+			.cta-button {
+				margin-right: 1.5em;
+			}
+		}
+	}
 }
