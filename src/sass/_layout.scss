@@ -339,14 +339,31 @@ main {
 					justify-content: center;
 					align-items: center;
 					padding: 1em;
-					width: 50%;
+					width: 65%;
 					background-color: $orange-light;
 					border-radius: 10px;
 
 					&-icon {
+						margin-bottom: 1em;
 						width: 50px;
 						height: 50px;
 					}
+
+					&-number {
+						font-family: "Antonio", sans-serif;
+						font-size: 5rem;
+					}
+
+					&-description {
+						margin-top: 0.5em;
+						font-family: "Antonio-light", sans-serif;
+						font-size: 1.8rem;
+					}
+				}
+
+				&__card:nth-of-type(2),
+				&__card:nth-of-type(3) {
+					margin-top: 4em;
 				}
 			}
 		}
