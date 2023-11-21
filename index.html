@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="dist/css/hamburger.min.css">
     <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
@@ -208,8 +209,49 @@
                 </div>
             </div>
         </section>
+        <section class="section partners">
+            <div class="wrapper">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="dist/img/partner1.png" alt="" class="slider-image"></div>
+                        <div class="swiper-slide"><img src="dist/img/partner2.png" alt="" class="slider-image"></div>
+                        <div class="swiper-slide"><img src="dist/img/partner3.png" alt="" class="slider-image"></div>
+                        <div class="swiper-slide"><img src="dist/img/partner4.png" alt="" class="slider-image"></div>
+                        <!-- <div class="swiper-slide"><img src="dist/img/partner5.png" alt="" class="slider-image"></div> -->
+                        <!-- <div class="swiper-slide"><img src="dist/img/partner6.png" alt="" class="slider-image"></div> -->
+                        <!-- <div class="swiper-slide"><img src="dist/img/partner7.png" alt="" class="slider-image"></div> -->
+                        <!-- <div class="swiper-slide"><img src="dist/img/partner8.png" alt="" class="slider-image"></div> -->
+                        <!-- <div class="swiper-slide"><img src="dist/img/partner9.png" alt="" class="slider-image"></div> -->
+                        <!-- <div class="swiper-slide"><img src="dist/img/partner10.png" alt="" class="slider-image"></div> -->
+                        <!-- <div class="swiper-slide"><img src="dist/img/partner11.png" alt="" class="slider-image"></div> -->
+                        <!-- <div class="swiper-slide"><img src="dist/img/partner12.png" alt="" class="slider-image"></div> -->
+                        <!-- <div class="swiper-slide"><img src="dist/img/partner13.png" alt="" class="slider-image"></div> -->
+                        <!-- <div class="swiper-slide"><img src="dist/img/partner14.png" alt="" class="slider-image"></div> -->
+
+                        <!-- https://www.youtube.com/watch?v=YJLV4g3nlfY -->
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="dist/js/script.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: "auto",
+            loop: true,
+            centeredSlides: true,
+            speed: 7000,
+            allowTouchMove: false,
+            disableOnInteraction: false,
+            autoplay: {
+                delay: 1,
+            }
+        });
+    </script>
 </body>
 
 </html>
