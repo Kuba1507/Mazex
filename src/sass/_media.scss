@@ -1,4 +1,4 @@
-@use 'colors' as *;
+@use "colors" as *;
 
 @media (min-width: 768px) {
 	.mobile-nav {
@@ -102,6 +102,24 @@
 				}
 			}
 		}
+
+		.company-numbers {
+			.wrapper {
+				.numbers-cards {
+					flex-direction: row;
+
+					&__card {
+						margin: 0 1em;
+						width: 200px;
+					}
+
+					&__card:nth-of-type(2),
+					&__card:nth-of-type(3) {
+						margin-top: 0;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -137,7 +155,7 @@
 					display: flex;
 					align-items: center;
 					height: 100%;
-					font-family: 'Antonio', sans-serif;
+					font-family: "Antonio", sans-serif;
 					font-size: 2rem;
 					padding: 0 1.5em;
 					color: $dark;
@@ -155,7 +173,7 @@
 
 	.header {
 		height: 600px;
-		background-image: url('../img/hero-img-desktop.jpg');
+		background-image: url("../img/hero-img-desktop.jpg");
 
 		.wrapper {
 			align-items: flex-end;
@@ -236,6 +254,17 @@
 			.wrapper {
 				.frame {
 					width: 80%;
+				}
+			}
+		}
+
+		.company-numbers {
+			.wrapper {
+				.numbers-cards {
+					&__card {
+						width: 250px;
+						margin: 0 5em;
+					}
 				}
 			}
 		}
