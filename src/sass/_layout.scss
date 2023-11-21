@@ -212,7 +212,7 @@ main {
 
 	.subsection-title {
 		font-family: "Antonio-light", sans-serif;
-		font-size: 2rem;
+		font-size: 2.5rem;
 		text-align: center;
 	}
 
@@ -400,6 +400,7 @@ main {
 					flex-direction: column;
 					justify-content: space-between;
 					align-items: center;
+					margin-top: 2em;
 					width: 90%;
 					height: 400px;
 					background-color: $dark;
@@ -410,23 +411,25 @@ main {
 
 					&-upper {
 						display: flex;
-						padding: 1.5em;
-						height: 75%;
+						height: 80%;
+						width: 100%;
 						border-radius: 15px 15px 0 0;
 
 						.quote-icon {
+							padding: 1em 0 0 1em;
 							img {
-								width: 40px;
-								height: 40px;
+								width: 35px;
+								height: 35px;
 							}
 						}
 
 						.quote {
-							margin-left: 1.5em;
+							padding: 1em 0.75em 0 0.5em;
+							margin-left: 0.5em;
 							&__content {
 								font-family: "Montserrat-light", sans-serif;
 								font-size: 1.6rem;
-								line-height: 1.3em;
+								line-height: 1.5em;
 								color: $pure-white;
 							}
 						}
@@ -439,14 +442,14 @@ main {
 						justify-content: center;
 						padding: 1.5em;
 						width: 100%;
-						height: 25%;
-						border-top: 4px solid $orange;
+						height: 20%;
+						border-top: 2px solid $orange;
 						border-radius: 0 0 15px 15px;
 
 						.opinion-author {
 							&__name {
 								font-family: "Antonio", sans-serif;
-								font-size: 1.8rem;
+								font-size: 1.7rem;
 								color: $pure-white;
 							}
 						}
@@ -461,19 +464,32 @@ main {
 
 						.author-avatar {
 							position: absolute;
-							bottom: 4em;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							bottom: 3em;
 							right: 1.25em;
-							padding: 1em;
+							width: 60px;
+							height: 60px;
 							background-color: #3b8c2e;
 							border-radius: 50%;
 
+							&--grey {
+								background-color: grey;
+							}
+
 							p {
 								font-family: "Montserrat", sans-serif;
-								font-size: 4rem;
+								font-size: 3.5rem;
 								color: $pure-white;
 							}
 						}
 					}
+				}
+
+				&__opinion:nth-of-type(2),
+				&__opinion:nth-of-type(3) {
+					margin-top: 5em;
 				}
 			}
 		}
