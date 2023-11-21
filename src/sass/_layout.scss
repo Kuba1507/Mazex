@@ -380,6 +380,7 @@ main {
 	}
 
 	.opinions {
+		margin-top: 2em;
 		background: rgb(233, 80, 25);
 		background: linear-gradient(
 			0deg,
@@ -476,6 +477,10 @@ main {
 
 							&--grey {
 								background-color: grey;
+							}
+
+							&--blue {
+								background-color: rgb(49, 49, 76);
 							}
 
 							p {

@@ -120,6 +120,42 @@
 				}
 			}
 		}
+
+		.opinions {
+			.wrapper {
+				.opinions-box {
+					&__opinion {
+						width: 50%;
+
+						&-upper {
+							.quote-icon {
+								padding: 1.5em 0 0 1.5em;
+
+								img {
+									width: 40px;
+									height: 40px;
+								}
+							}
+
+							.quote {
+								padding: 1.5em 1.5em 0 1em;
+
+								&__content {
+									font-size: 1.8rem;
+									line-height: 1.6em;
+								}
+							}
+						}
+
+						&-lower {
+							.author-avatar {
+								right: 2.5em;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
