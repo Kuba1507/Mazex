@@ -540,47 +540,8 @@ main {
 				object-fit: cover;
 			}
 
-			.image-data {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				width: 100%;
-				transform: translate(-50%, -50%);
-				text-align: center;
-				z-index: 100;
 
-				.text {
-					font-size: 14px;
-					font-weight: 400;
-					color: $pure-white;
-				}
-
-				h2 {
-					font-size: 45px;
-					font-weight: 600;
-					color: $pure-white;
-				}
-
-				.button {
-					display: inline-block;
-					padding: 10px 20px;
-					background-color: #fff;
-					border-radius: 25px;
-					color: #333;
-					text-decoration: none;
-					margin-top: 25px;
-				}
-
-			}
-
-			&::before {
-				content: "";
-				position: absolute;
-				height: 100%;
-				width: 100%;
-				background-color: rgba(0, 0, 0, 0.55);
-				z-index: 10;
-			}
+			
 		}
 	}
 }
