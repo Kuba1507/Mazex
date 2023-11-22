@@ -13,9 +13,9 @@
 <body>
     <nav class="mobile-nav">
         <a href="#" class="mobile-nav__item">Strona główna</a>
-        <a href="#" class="mobile-nav__item">O firmie</a>
-        <a href="#" class="mobile-nav__item">Galeria</a>
-        <a href="#" class="mobile-nav__item">Kontakt</a>
+        <a href="#aboutus" class="mobile-nav__item">O firmie</a>
+        <a href="#gallery" class="mobile-nav__item">Galeria</a>
+        <a href="#contact" class="mobile-nav__item">Kontakt</a>
     </nav>
     <button class="hamburger hamburger--stand" type="button">
         <span class="hamburger-box">
@@ -29,9 +29,9 @@
             </a>
             <nav class="desktop-nav">
                 <a href="#" class="desktop-nav__item">Strona główna</a>
-                <a href="#" class="desktop-nav__item">O firmie</a>
-                <a href="#" class="desktop-nav__item">Galeria</a>
-                <a href="#" class="desktop-nav__item">Kontakt</a>
+                <a href="#aboutus" class="desktop-nav__item">O firmie</a>
+                <a href="#gallery" class="desktop-nav__item">Galeria</a>
+                <a href="#contact" class="desktop-nav__item">Kontakt</a>
             </nav>
         </div>
     </div>
@@ -46,6 +46,10 @@
         <div class="header__shadow"></div>
     </header>
     <main>
+        <div class="cookie-box">
+            <p class="cookie-box__alert">Ta strona korzysta z ciasteczek! Smacznego!</p>
+            <button class="cookie-box__close-btn">Zatwierdź</button>
+        </div>
         <section class="section aboutus" id="aboutus">
             <div class="wrapper">
                 <h2 class="section-title">O firmie</h2>
@@ -276,6 +280,20 @@
                     <div class="swiper-button-next nav-btn"></div>
                     <div class="swiper-button-prev nav-btn"></div>
                     <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section contact" id="contact">
+            <div class="wrapper">
+                <h2 class="section-title">Kontakt</h2>
+                <div class="contact-box">
+                    <div class="contact-block">
+                        <div class="contact-block__icon">
+
+                        </div>
+                        <p class="contact-block__name"></p>
+                        <p class="contact-block__content"></p>
+                    </div>
                 </div>
             </div>
         </section>
