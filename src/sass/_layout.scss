@@ -632,7 +632,7 @@ main {
 				flex-direction: column;
 				align-items: center;
 				justify-content: center;
-				margin-top: 5em;
+				margin-top: 2em;
 
 				.contact-block {
 					position: relative;
@@ -646,6 +646,7 @@ main {
 					background: rgb(233, 80, 25);
 					background: linear-gradient(0deg, rgba(233, 80, 25, 1) 0%, rgba(239, 124, 22, 1) 40%);
 					border-radius: 15px;
+					transition: box-shadow 0.5s, transform 0.5s;
 
 					&__icon {
 						display: flex;
@@ -717,6 +718,12 @@ main {
 								margin: 0.25em 0;
 							}
 						}
+					}
+
+					&:hover {
+						box-shadow: 0 0 10px 5px #e0d848, 0 0 20px 7px #ebecca, 0 0 25px 20px rgb(255, 255, 255),
+							0 0 30px 25px #f5a957;
+						transform: scale(1.2);
 					}
 				}
 			}
