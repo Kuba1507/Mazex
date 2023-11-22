@@ -213,7 +213,7 @@
             <div class="wrapper">
                 <h3 class="subsection-title">Firmy, które nam zaufały</h3>
                 <!-- Slider main container -->
-                <div class="swiper">
+                <div class="swiper partner-swiper">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -272,6 +272,10 @@
             slidesPerView: 1,
             spaceBetween: 30,
             loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,

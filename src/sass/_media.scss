@@ -175,6 +175,22 @@
 				}
 			}
 		}
+
+		.gallery {
+			.swiper {
+				margin-top: 2em;
+				// width: 90%;
+			}
+
+			.slide {
+				height: 400px;
+				border: none;
+
+				.image {
+					object-fit: cover;
+				}
+			}
+		}
 	}
 }
 
@@ -339,7 +355,7 @@
 
 						&-lower {
 							.author-avatar {
-								bottom: 4.2em;
+								bottom: 3.8em;
 							}
 						}
 					}
@@ -366,6 +382,29 @@
 						}
 					}
 				}
+			}
+		}
+
+		.gallery {
+			.slide {
+				height: 600px;
+			}
+
+			.nav-btn {
+				visibility: visible;
+			}
+
+			.swiper-button-next {
+				right: 25px;
+			}
+
+			.swiper-button-prev {
+				left: 25px;
+			}
+
+			.swiper-pagination-bullet {
+				height: 20px;
+				width: 20px;
 			}
 		}
 	}
