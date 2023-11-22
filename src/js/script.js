@@ -1,8 +1,23 @@
 const body = document.querySelector("body");
 const burgerBtn = document.querySelector(".hamburger");
 const mobileNav = document.querySelector(".mobile-nav");
+const cookieBox = document.querySelector(".cookie-box");
+const cookieBtn = document.querySelector(".cookie-box__close-btn");
 const mobileNavItems = document.querySelectorAll(".mobile-nav__item");
 const yearsAmount = document.querySelector(".years-number");
+
+const showCookie = () => {
+	const cookieEaten = localStorage.getItem("cookie");
+
+	if (cookieEaten) {
+		cookieBox.classList.add("close-cookie");
+	}
+};
+
+const handleCookieBox = () => {
+	localStorage.setItem("cookie", "true");
+	cookieBox.classList.add("close-cookie");
+};
 
 const handleNav = () => {
 	mobileNav.classList.toggle("show-nav");
@@ -39,6 +54,8 @@ const yearsAmountControl = () => {
 document.addEventListener("DOMContentLoaded", () => {
 	yearsAmountControl();
 });
+cookieBtn.addEventListener("click", handleCookieBox);
+showCookie();
 burgerBtn.addEventListener("click", handleNav);
 mobileNavItems.forEach((item) => {
 	item.addEventListener("click", closeNav);
