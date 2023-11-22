@@ -1,5 +1,5 @@
-@use "fonts" as *;
-@use "colors" as *;
+@use 'fonts' as *;
+@use 'colors' as *;
 
 html {
 	font-size: 62.5%;
@@ -30,11 +30,7 @@ body {
 	width: 65%;
 	height: 100vh;
 	background: rgb(233, 80, 25);
-	background: linear-gradient(
-		128deg,
-		rgba(233, 80, 25, 1) 0%,
-		rgba(239, 124, 22, 1) 100%
-	);
+	background: linear-gradient(128deg, rgba(233, 80, 25, 1) 0%, rgba(239, 124, 22, 1) 100%);
 	box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 	transform: translateX(650px);
 	transition: 0.4s;
@@ -43,7 +39,7 @@ body {
 	&__item {
 		padding: 1.75em 1.5em;
 		width: 100%;
-		font-family: "Antonio-light", sans-serif;
+		font-family: 'Antonio-light', sans-serif;
 		font-size: 2.25rem;
 		color: $dark;
 		text-decoration: none;
@@ -108,7 +104,7 @@ body {
 	position: relative;
 	margin-top: 80px;
 	height: 300px;
-	background-image: url("../img/hero-img-mobile.jpg");
+	background-image: url('../img/hero-img-mobile.jpg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -128,7 +124,7 @@ body {
 
 			&__name,
 			&__heading {
-				font-family: "Loew", sans-serif;
+				font-family: 'Loew', sans-serif;
 			}
 
 			&__name {
@@ -155,7 +151,7 @@ body {
 
 		.cta-button {
 			padding: 0.8em 1.5em;
-			font-family: "Montserrat-bold", sans-serif;
+			font-family: 'Montserrat-bold', sans-serif;
 			font-size: 1.6rem;
 			color: $dark;
 			border: none;
@@ -206,7 +202,7 @@ main {
 		z-index: 999;
 
 		&__alert {
-			font-family: "Montserrat-light", sans-serif;
+			font-family: 'Montserrat-light', sans-serif;
 			color: $creme-white;
 			text-align: center;
 			font-size: 1.3rem;
@@ -215,7 +211,7 @@ main {
 		&__close-btn {
 			margin-top: 1em;
 			padding: 0.4em 0.8em;
-			font-family: "Montserrat", sans-serif;
+			font-family: 'Montserrat', sans-serif;
 			background-color: $orange;
 			border: none;
 			border-radius: 20px;
@@ -240,11 +236,11 @@ main {
 	.section-title {
 		position: relative;
 		margin-left: 0.25em;
-		font-family: "Antonio-light", sans-serif;
+		font-family: 'Antonio-light', sans-serif;
 		font-size: 2.6rem;
 
 		&::after {
-			content: "";
+			content: '';
 			position: absolute;
 			bottom: 0;
 			left: -10px;
@@ -255,7 +251,7 @@ main {
 	}
 
 	.subsection-title {
-		font-family: "Antonio-light", sans-serif;
+		font-family: 'Antonio-light', sans-serif;
 		font-size: 2.5rem;
 		text-align: center;
 	}
@@ -270,7 +266,7 @@ main {
 				.aboutus-description {
 					&__first-text,
 					&__second-text {
-						font-family: "Montserrat";
+						font-family: 'Montserrat';
 						font-size: 1.7rem;
 						color: $dark;
 						line-height: 1.5em;
@@ -284,7 +280,7 @@ main {
 						font-weight: bold;
 
 						&-list {
-							font-family: "Montserrat";
+							font-family: 'Montserrat';
 							margin-top: 0.75em;
 							margin-left: 1em;
 
@@ -305,8 +301,7 @@ main {
 					&__first-image,
 					&__second-image {
 						width: 70%;
-						box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
-							rgba(0, 0, 0, 0.24) 0px 1px 2px;
+						box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 					}
 
 					&__first-image {
@@ -325,7 +320,7 @@ main {
 		position: relative;
 		margin-top: 2em;
 		height: 300px;
-		background-image: url("../img/frame-background.jpeg");
+		background-image: url('../img/frame-background.jpeg');
 		background-repeat: no-repeat;
 		background-position: 50% 50%;
 		background-size: cover;
@@ -349,7 +344,7 @@ main {
 
 				.slogan {
 					display: block;
-					font-family: "Montserrat-light", sans-serif;
+					font-family: 'Montserrat-light', sans-serif;
 					font-size: 2.5rem;
 					color: $creme-white;
 					line-height: 1.4em;
@@ -392,8 +387,7 @@ main {
 					width: 65%;
 					background-color: $orange-light;
 					border-radius: 10px;
-					box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
-						rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+					box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
 						rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 					transition: transform 0.3s ease;
 					transform-style: preserve-3d;
@@ -406,13 +400,13 @@ main {
 					}
 
 					&-number {
-						font-family: "Antonio", sans-serif;
+						font-family: 'Antonio', sans-serif;
 						font-size: 5rem;
 					}
 
 					&-description {
 						margin-top: 0.5em;
-						font-family: "Antonio-light", sans-serif;
+						font-family: 'Antonio-light', sans-serif;
 						font-size: 1.8rem;
 						text-align: center;
 					}
@@ -457,8 +451,7 @@ main {
 					height: 400px;
 					background-color: $dark;
 					border-radius: 15px;
-					box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
-						rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+					box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
 						rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 
 					&-upper {
@@ -479,7 +472,7 @@ main {
 							padding: 1em 0.75em 0 0.5em;
 							margin-left: 0.5em;
 							&__content {
-								font-family: "Montserrat-light", sans-serif;
+								font-family: 'Montserrat-light', sans-serif;
 								font-size: 1.6rem;
 								line-height: 1.5em;
 								color: $pure-white;
@@ -500,7 +493,7 @@ main {
 
 						.opinion-author {
 							&__name {
-								font-family: "Antonio", sans-serif;
+								font-family: 'Antonio', sans-serif;
 								font-size: 1.7rem;
 								color: $pure-white;
 							}
@@ -535,7 +528,7 @@ main {
 							}
 
 							p {
-								font-family: "Montserrat", sans-serif;
+								font-family: 'Montserrat', sans-serif;
 								font-size: 3.5rem;
 								color: $pure-white;
 							}
@@ -629,6 +622,66 @@ main {
 
 		.swiper-pagination-bullet-active {
 			border: 4px solid $dark;
+		}
+	}
+
+	.contact {
+		.wrapper {
+			.contact-box {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				margin-top: 5em;
+
+				.contact-block {
+					position: relative;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					padding: 2em 0;
+					width: 80%;
+					background: rgb(233, 80, 25);
+					background: linear-gradient(0deg, rgba(233, 80, 25, 1) 0%, rgba(239, 124, 22, 1) 40%);
+					border-radius: 15px;
+
+					&__icon {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						position: absolute;
+						top: -30%;
+						width: 90px;
+						height: 90px;
+						background-color: $pure-white;
+						border-radius: 50%;
+						border: 12px solid $orange-light;
+
+						img {
+							width: 35px;
+							height: 35px;
+						}
+					}
+
+					&__name,
+					&__content {
+						color: $dark;
+					}
+
+					&__name {
+						margin-top: 1em;
+						font-family: 'Antonio-light', sans-serif;
+						font-size: 2.5rem;
+					}
+
+					&__content {
+						margin-top: 1em;
+						font-family: 'Montserrat', sans-serif;
+						font-size: 2rem;
+					}
+				}
+			}
 		}
 	}
 }
