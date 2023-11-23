@@ -797,3 +797,21 @@ main {
 		}
 	}
 }
+
+//footer
+
+.footer {
+	font-family: "Montserrat-light", sans-serif;
+	background-color: $dark;
+
+	&__mobile {
+		padding: 1em;
+		text-align: center;
+
+		&-content {
+			color: $creme-white;
+			line-height: 1.4em;
+			letter-spacing: 1px;
+		}
+	}
+}

@@ -5,6 +5,7 @@ const cookieBox = document.querySelector(".cookie-box");
 const cookieBtn = document.querySelector(".cookie-box__close-btn");
 const mobileNavItems = document.querySelectorAll(".mobile-nav__item");
 const yearsAmount = document.querySelector(".years-number");
+const currentYearSpan = document.querySelector(".current-year");
 
 const showCookie = () => {
 	const cookieEaten = localStorage.getItem("cookie");
@@ -51,8 +52,14 @@ const yearsAmountControl = () => {
 	yearsAmount.textContent = newYears.toString();
 };
 
+const setCurrentYear = () => {
+	const currentYear = new Date().getFullYear();
+	currentYearSpan.textContent = currentYear;
+};
+
 document.addEventListener("DOMContentLoaded", () => {
 	yearsAmountControl();
+	setCurrentYear();
 });
 cookieBtn.addEventListener("click", handleCookieBox);
 showCookie();
