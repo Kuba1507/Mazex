@@ -804,6 +804,10 @@ main {
 	font-family: "Montserrat-light", sans-serif;
 	background-color: $dark;
 
+	&__desktop {
+		display: none;
+	}
+
 	&__mobile {
 		padding: 1em;
 		text-align: center;
