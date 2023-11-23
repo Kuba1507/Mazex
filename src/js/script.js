@@ -36,26 +36,42 @@ const yearsAmountControl = () => {
 	const mm = today.getMonth() + 1;
 	const yyyy = today.getFullYear();
 
-	const baseYear = 2025; // Rok, od którego zaczynają się zmiany liczby lat
-	const startingValue = 2; // Początkowa wartość liczby lat
-
-	// Obliczamy różnicę między aktualnym rokiem a bazowym rokiem
+	const baseYear = 2025;
+	const startingValue = 2;
 	const yearDifference = yyyy - baseYear;
-
-	// Jeśli obecna data jest po kwietniu, zwiększamy różnicę o 1
 	const adjustedDifference = mm > 3 ? yearDifference + 1 : yearDifference;
-
-	// Wyliczamy nową ilość lat
 	const newYears = Math.max(startingValue + adjustedDifference, startingValue);
 
-	// Ustawiamy wartość w akapicie HTML
 	yearsAmount.textContent = newYears.toString();
+};
+
+const slides = document.querySelectorAll(".swiper-slide");
+
+const updateImageSource = () => {
+	slides.forEach((slide) => {
+		const img = slide.querySelector("img");
+		const desktopSrc = img.getAttribute("data-desktop");
+
+		if (window.innerWidth >= 992 && desktopSrc) {
+			img.src = desktopSrc;
+		} else {
+			img.src = img.getAttribute("src");
+		}
+	});
 };
 
 const setCurrentYear = () => {
 	const currentYear = new Date().getFullYear();
 	currentYearSpan.textContent = currentYear;
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+	updateImageSource();
+});
+
+window.addEventListener("resize", () => {
+	updateImageSource();
+});
 
 document.addEventListener("DOMContentLoaded", () => {
 	yearsAmountControl();
