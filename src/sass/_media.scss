@@ -1,4 +1,4 @@
-@use 'colors' as *;
+@use "colors" as *;
 
 @media (min-width: 768px) {
 	.mobile-nav {
@@ -250,7 +250,7 @@
 					display: flex;
 					align-items: center;
 					height: 100%;
-					font-family: 'Antonio', sans-serif;
+					font-family: "Antonio", sans-serif;
 					font-size: 2rem;
 					padding: 0 1.5em;
 					color: $dark;
@@ -268,7 +268,7 @@
 
 	.header {
 		height: 600px;
-		background-image: url('../img/hero-img-desktop.jpg');
+		background-image: url("../img/hero-img-desktop.jpg");
 
 		.wrapper {
 			align-items: flex-end;
@@ -442,6 +442,21 @@
 					.contact-block {
 						margin: 4em 6em;
 						width: 350px;
+					}
+				}
+
+				.facebook-box {
+					.facebook-link {
+						font-size: 2.5rem;
+
+						img {
+							width: 45px;
+							height: 45px;
+						}
+
+						&::after {
+							width: 70%;
+						}
 					}
 				}
 			}
