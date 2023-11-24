@@ -75,8 +75,10 @@ window.addEventListener("resize", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
 	yearsAmountControl();
-	setCurrentYear();
 });
+
+window.addEventListener("load", setCurrentYear);
+
 cookieBtn.addEventListener("click", handleCookieBox);
 showCookie();
 burgerBtn.addEventListener("click", handleNav);
