@@ -1,4 +1,4 @@
-@use "colors" as *;
+@use 'colors' as *;
 
 @media (min-width: 768px) {
 	.mobile-nav {
@@ -296,6 +296,11 @@
 
 			&-author {
 				position: absolute;
+				right: 3em;
+				bottom: 0.5em;
+				font-family: 'Montserrat-light', sans-serif;
+				font-size: 1.4rem;
+				color: rgb(152, 152, 152);
 			}
 		}
 
@@ -337,7 +342,7 @@
 					display: flex;
 					align-items: center;
 					height: 100%;
-					font-family: "Antonio", sans-serif;
+					font-family: 'Antonio', sans-serif;
 					font-size: 2rem;
 					padding: 0 1.5em;
 					color: $dark;
@@ -355,7 +360,7 @@
 
 	.header {
 		height: 600px;
-		background-image: url("../img/hero-img-desktop.jpg");
+		background-image: url('../img/hero-img-desktop.jpg');
 
 		.wrapper {
 			align-items: flex-end;
