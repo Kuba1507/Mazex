@@ -273,6 +273,7 @@ main {
 				display: flex;
 				flex-direction: column;
 				margin-top: 2em;
+				overflow: hidden;
 
 				.aboutus-description {
 					&__first-text,
@@ -441,6 +442,7 @@ main {
 		);
 
 		.wrapper {
+			overflow: hidden;
 			.opinions-box {
 				display: flex;
 				flex-direction: column;
@@ -704,7 +706,6 @@ main {
 
 						&--email {
 							width: 100%;
-							// word-wrap: break-word;
 							text-align: center;
 						}
 
