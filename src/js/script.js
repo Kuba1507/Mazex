@@ -6,6 +6,8 @@ const cookieBtn = document.querySelector(".cookie-box__close-btn");
 const mobileNavItems = document.querySelectorAll(".mobile-nav__item");
 const yearsAmount = document.querySelector(".years-number");
 const currentYearSpan = document.querySelector(".current-year");
+const emailContent = document.querySelector(".contact-block__content--email");
+const slides = document.querySelectorAll(".swiper-slide");
 
 const showCookie = () => {
 	const cookieEaten = localStorage.getItem("cookie");
@@ -45,8 +47,6 @@ const yearsAmountControl = () => {
 	yearsAmount.textContent = newYears.toString();
 };
 
-const slides = document.querySelectorAll(".swiper-slide");
-
 const updateImageSource = () => {
 	slides.forEach((slide) => {
 		const img = slide.querySelector("img");
@@ -58,6 +58,14 @@ const updateImageSource = () => {
 			img.src = img.getAttribute("src");
 		}
 	});
+};
+
+const handleResponsiveEmail = () => {
+	if (window.innerWidth < 768) {
+		emailContent.innerHTML = "mazex.transport<br>@gmail.com";
+	} else {
+		emailContent.innerHTML = "mazex.transport@gmail.com";
+	}
 };
 
 const setCurrentYear = () => {
@@ -74,6 +82,7 @@ window.addEventListener("resize", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+	handleResponsiveEmail();
 	yearsAmountControl();
 });
 

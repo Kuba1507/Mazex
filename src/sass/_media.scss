@@ -211,6 +211,12 @@
 				.contact-box {
 					.contact-block {
 						width: 60%;
+
+						&__content {
+							&--email {
+								white-space: normal;
+							}
+						}
 					}
 				}
 			}
