@@ -832,4 +832,25 @@ main {
 
 //error 404
 
+.error-404 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: calc(100vh - 80px);
 
+	.error-box {
+		padding: 1em;
+		text-align: center;
+
+		&-404 {
+			font-family: "Antonio-bold", sans-serif;
+			font-size: 15rem;
+		}
+
+		&-message {
+			font-family: "Montserrat", sans-serif;
+			font-size: 2rem;
+		}
+	}
+}
