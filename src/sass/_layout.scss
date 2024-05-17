@@ -188,6 +188,18 @@ body {
 	}
 }
 
+.header-main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70px;
+	background-color: #ec6a26;
+
+	&__logo {
+		width: 180px;
+	}
+}
+
 //main
 
 main {
