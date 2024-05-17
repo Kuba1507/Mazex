@@ -328,8 +328,15 @@ main {
 				background-color: $pure-white;
 				border: 2px solid $dark;
 				border-radius: 26px;
+				transition: background-color 0.3s, border-color 0.3s, color 0.3s;
 				cursor: pointer;
 				z-index: 1;
+
+				&:hover {
+					background-color: $dark;
+					border-color: $pure-white;
+					color: $pure-white;
+				}
 			}
 
 			.shadow {
@@ -337,7 +344,18 @@ main {
 				height: 100vh;
 				width: 100%;
 				background-color: rgba(0, 0, 0, 0.75);
+				transition: background-color 0.5s;
 				z-index: 0;
+			}
+
+			.welcome-section__transport-cta-button:hover + .shadow,
+			.welcome-section__garage .welcome-section__transport-cta-button:hover + .shadow {
+				background-color: rgb(236, 106, 38, 0.7);
+			}
+
+			.welcome-section__transport-cta-button:hover ~ .welcome-section__garage,
+			.welcome-section__garage .welcome-section__transport-cta-button:hover ~ .welcome-section__transport {
+				filter: blur(1px);
 			}
 		}
 
