@@ -352,11 +352,6 @@ main {
 			.welcome-section__garage .welcome-section__transport-cta-button:hover + .shadow {
 				background-color: rgb(236, 106, 38, 0.7);
 			}
-
-			.welcome-section__transport-cta-button:hover ~ .welcome-section__garage,
-			.welcome-section__garage .welcome-section__transport-cta-button:hover ~ .welcome-section__transport {
-				filter: blur(1px);
-			}
 		}
 
 		&__transport {
