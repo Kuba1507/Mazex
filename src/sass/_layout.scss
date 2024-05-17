@@ -274,6 +274,36 @@ main {
 		text-align: center;
 	}
 
+	.welcome-section {
+		display: flex;
+		flex-direction: column;
+		height: calc(100svh - 70px);
+
+		&__transport,
+		&__garage {
+			position: relative;
+			background-size: cover;
+			background-position: 0 50%;
+
+			.shadow {
+				position: absolute;
+				height: 100vh;
+				width: 100%;
+				background-color: rgba(0, 0, 0, 0.7);
+			}
+		}
+
+		&__transport {
+			flex: 1;
+			background-image: url('../img/section-one-bg.webp');
+		}
+
+		&__garage {
+			flex: 1;
+			background-image: url('../img/section-two-bg.webp');
+		}
+	}
+
 	.aboutus {
 		.wrapper {
 			.aboutus-box {
