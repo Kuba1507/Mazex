@@ -282,14 +282,50 @@ main {
 		&__transport,
 		&__garage {
 			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
 			background-size: cover;
 			background-position: 0 50%;
+			overflow: hidden;
+
+			&-logo {
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				border: 2px solid $dark;
+			}
+
+			&-heading {
+				margin-top: 0.75em;
+				font-size: 2rem;
+				font-weight: bold;
+			}
+
+			&-offer {
+				margin-top: 0.4em;
+
+				li {
+					font-size: 1.6rem;
+					margin-top: 0.3em;
+				}
+			}
+
+			&-logo,
+			&-heading,
+			&-offer {
+				font-family: 'Montserrat', sans-serif;
+				color: $pure-white;
+				z-index: 1;
+			}
 
 			.shadow {
 				position: absolute;
 				height: 100vh;
 				width: 100%;
 				background-color: rgba(0, 0, 0, 0.7);
+				z-index: 0;
 			}
 		}
 
