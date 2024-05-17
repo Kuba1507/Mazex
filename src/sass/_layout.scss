@@ -291,8 +291,8 @@ main {
 			overflow: hidden;
 
 			&-logo {
-				width: 150px;
-				height: 150px;
+				width: 140px;
+				height: 140px;
 				border-radius: 50%;
 				border: 2px solid $dark;
 			}
@@ -304,7 +304,7 @@ main {
 			}
 
 			&-offer {
-				margin-top: 0.4em;
+				margin-top: 0.2em;
 
 				li {
 					font-size: 1.6rem;
@@ -317,6 +317,18 @@ main {
 			&-offer {
 				font-family: 'Montserrat', sans-serif;
 				color: $pure-white;
+				z-index: 1;
+			}
+
+			&-cta-button {
+				margin-top: 1em;
+				padding: 0.5em 1.6em;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 1.6rem;
+				background-color: $pure-white;
+				border: 2px solid $dark;
+				border-radius: 26px;
+				cursor: pointer;
 				z-index: 1;
 			}
 
