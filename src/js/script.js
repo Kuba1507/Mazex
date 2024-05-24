@@ -8,8 +8,6 @@ const yearsAmount = document.querySelector('.years-number')
 const currentYearSpan = document.querySelector('.current-year')
 const emailContent = document.querySelector('.contact-block__content--email')
 const slides = document.querySelectorAll('.swiper-slide')
-// const transportBtn = document.querySelector('.welcome-section__transport-cta-button')
-// const garageBtn = document.querySelector('.welcome-section__garage-cta-button')
 
 const showCookie = () => {
 	const cookieEaten = localStorage.getItem('cookie')
@@ -77,14 +75,6 @@ const setCurrentYear = () => {
 	currentYearSpan.textContent = currentYear
 }
 
-// transportBtn.addEventListener('click', () => {
-// 	window.location.href = 'transport.html'
-// })
-
-// garageBtn.addEventListener('click', () => {
-// 	window.location.href = 'garaz.html'
-// })
-
 document.addEventListener('DOMContentLoaded', () => {
 	updateImageSource()
 })
@@ -92,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('resize', () => {
 	updateImageSource()
 })
- 
+
 document.addEventListener('DOMContentLoaded', () => {
 	handleResponsiveEmail()
 })
@@ -105,4 +95,5 @@ burgerBtn.addEventListener('click', handleNav)
 mobileNavItems.forEach(item => {
 	item.addEventListener('click', closeNav)
 })
+
 yearsAmountControl()
