@@ -77,21 +77,21 @@ const setCurrentYear = () => {
 	currentYearSpan.textContent = currentYear
 }
 
-document.transportBtn.addEventListener('click', () => {
+transportBtn.addEventListener('click', () => {
 	window.location.href = 'transport.html'
 })
 
-document.garageBtn.addEventListener('click', () => {
+garageBtn.addEventListener('click', () => {
 	window.location.href = 'garaz.html'
 })
 
-document.addEventListener('DOMContentLoaded', () => {
-	updateImageSource()
-})
+// document.addEventListener('DOMContentLoaded', () => {
+// 	updateImageSource()
+// })
 
-window.addEventListener('resize', () => {
-	updateImageSource()
-})
+// window.addEventListener('resize', () => {
+// 	updateImageSource()
+// })
 
 document.addEventListener('DOMContentLoaded', () => {
 	handleResponsiveEmail()
