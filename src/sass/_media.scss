@@ -92,13 +92,26 @@
 		}
 
 		.aboutus {
-			.wrapper {
-				
+			&-container {
+				&__images {
+					flex-direction: row;
+					align-items: center;
+					justify-content: center;
+
+					&-image {
+						margin: 1em;
+						width: 45%;
+
+						&--horizontal {
+							display: none;
+						}
+					}
+				}
 			}
 		}
 
 		.ornament {
-			margin-top: 12em;
+			margin-top: 2em;
 			background-position: 50% 65%;
 
 			.wrapper {
@@ -435,8 +448,27 @@
 		}
 
 		.aboutus {
-			.wrapper {
-				
+			&-container {
+				&__images {
+					margin-top: 3em;
+					justify-content: space-between;
+					align-items: center;
+
+					&-image {
+						margin: 0;
+						max-height: 359px;
+
+						&--vertical {
+							width: 24%;
+						}
+
+						&--horizontal {
+							display: block;
+							width: 48%;
+							// height: 100%;
+						}
+					}
+				}
 			}
 		}
 
