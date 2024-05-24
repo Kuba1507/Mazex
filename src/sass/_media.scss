@@ -93,49 +93,7 @@
 
 		.aboutus {
 			.wrapper {
-				.aboutus-box {
-					align-items: center;
-
-					.aboutus-description {
-						&__first-text,
-						&__second-text {
-							font-size: 1.9rem;
-						}
-
-						&__second-text {
-							&-list {
-								li {
-									font-size: 1.75rem;
-								}
-							}
-						}
-					}
-
-					.aboutus-images {
-						position: relative;
-						flex-direction: row;
-						justify-content: flex-start;
-						margin-top: 2em;
-						width: 75%;
-
-						&__first-image,
-						&__second-image {
-							box-shadow: none;
-						}
-
-						&__first-image {
-							width: 400px;
-						}
-
-						&__second-image {
-							position: absolute;
-							right: 0;
-							bottom: -10em;
-							border-top: 15px solid $pure-white;
-							border-left: 15px solid $pure-white;
-						}
-					}
-				}
+				
 			}
 		}
 
@@ -478,32 +436,7 @@
 
 		.aboutus {
 			.wrapper {
-				.aboutus-box {
-					flex-direction: row;
-					align-items: flex-start;
-
-					.aboutus-description {
-						flex: 1 0 0;
-					}
-
-					.aboutus-images {
-						flex: 1.2 0 0;
-						justify-content: flex-start;
-						align-items: flex-start;
-						margin-top: 0;
-						margin-left: 3em;
-
-						&__first-image {
-							margin-top: 0;
-							width: 250px;
-						}
-
-						&__second-image {
-							right: 3em;
-							width: 400px;
-						}
-					}
-				}
+				
 			}
 		}
 
