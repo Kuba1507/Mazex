@@ -8,6 +8,8 @@ const yearsAmount = document.querySelector('.years-number')
 const currentYearSpan = document.querySelector('.current-year')
 const emailContent = document.querySelector('.contact-block__content--email')
 const slides = document.querySelectorAll('.swiper-slide')
+const transportBtn = document.querySelector('.welcome-section__transport-cta-button')
+const garageBtn = document.querySelector('.welcome-section__garage-cta-button')
 
 const showCookie = () => {
 	const cookieEaten = localStorage.getItem('cookie')
@@ -74,6 +76,14 @@ const setCurrentYear = () => {
 	const currentYear = new Date().getFullYear()
 	currentYearSpan.textContent = currentYear
 }
+
+document.transportBtn.addEventListener('click', () => {
+	window.location.href = 'transport.html'
+})
+
+document.garageBtn.addEventListener('click', () => {
+	window.location.href = 'garaz.html'
+})
 
 document.addEventListener('DOMContentLoaded', () => {
 	updateImageSource()
