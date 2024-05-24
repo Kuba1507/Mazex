@@ -402,7 +402,7 @@
 
 	.header {
 		height: 600px;
-		background-image: url('../img/hero-img-desktop.jpg');
+		background-image: url('../img/hero-img-desktop.webp');
 
 		.wrapper {
 			align-items: flex-end;
@@ -470,7 +470,7 @@
 					margin-top: 2em;
 					padding: 0.8em 2.5em;
 					font-size: 2rem;
-					border: 4px solid $dark;
+					border: 3px solid $dark;
 					border-radius: 36px;
 				}
 			}
