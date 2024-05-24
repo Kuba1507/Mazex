@@ -474,6 +474,50 @@ main {
 		}
 	}
 
+	.transporter {
+		&-container {
+			margin-top: 2em;
+
+			&-text {
+				font-family: 'Montserrat', sans-serif;
+				font-size: 1.7rem;
+				color: $dark;
+				line-height: 1.6em;
+			}
+
+			&__left {
+				ul {
+					margin-left: 1em;
+				}
+
+				p:nth-child(1) {
+					margin-bottom: 0.5em;
+					font-size: 1.8rem;
+					font-weight: bold;
+				}
+
+				p:nth-child(3) {
+					margin-top: 1em;
+					font-weight: bold;
+					font-size: 1.8rem;
+				}
+
+				p:nth-child(5) {
+					margin-top: 1em;
+				}
+
+				p:nth-child(6) {
+					margin-top: 0.5em;
+				}
+
+				p:nth-child(5),
+				p:nth-child(6) {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
 	.company-numbers {
 		margin-top: 2em;
 		.wrapper {
