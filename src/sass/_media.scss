@@ -202,7 +202,6 @@
 		.gallery {
 			.swiper {
 				margin-top: 2em;
-				// width: 90%;
 			}
 
 			.slide {
@@ -479,6 +478,23 @@
 			.wrapper {
 				.frame {
 					width: 80%;
+				}
+			}
+		}
+
+		.transporter {
+			&-container {
+				display: flex;
+
+				&__left {
+					flex: 1;
+					margin-right: 3em;
+				}
+
+				&__right {
+					flex: 1;
+					margin-top: 0;
+					margin-left: 3em;
 				}
 			}
 		}

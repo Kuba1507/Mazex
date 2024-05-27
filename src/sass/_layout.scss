@@ -542,12 +542,20 @@ main {
 				.bold {
 					font-weight: bold;
 				}
+
+				&-info {
+					margin-top: 0.5em;
+					font-size: 1.2rem;
+				}
+
+				p:nth-child(4) {
+					margin-top: 2em;
+				}
 			}
 		}
 	}
 
 	.company-numbers {
-		margin-top: 2em;
 		.wrapper {
 			.numbers-cards {
 				display: flex;
