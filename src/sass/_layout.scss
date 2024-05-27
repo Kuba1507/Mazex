@@ -517,17 +517,30 @@ main {
 			}
 
 			&__right {
+				margin-top: 2em;
+				font-family: 'Montserrat', sans-serif;
+
 				table {
-					border-collapse: collapse;
-					border-spacing: 0;
 					width: 100%;
-					border: 1px solid #ddd;
+					border: 1px solid #1a1a1a;
+					border-radius: 5px;
+					border-collapse: collapse;
 				}
 
 				th,
 				td {
-					text-align: left;
-					padding: 8px;
+					padding: 16px;
+					text-align: center;
+					border: 1px solid #1a1a1a;
+				}
+
+				tr:nth-child(1) th {
+					font-size: 2rem;
+					font-weight: bold;
+				}
+
+				.bold {
+					font-weight: bold;
 				}
 			}
 		}
