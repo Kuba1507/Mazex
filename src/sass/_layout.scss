@@ -188,7 +188,7 @@ body {
 	}
 
 	&--garage {
-		background-image: url('../img/hero-img-mobile-garage.webp')!important;
+		background-image: url('../img/hero-img-mobile-garage.webp') !important;
 	}
 }
 
@@ -203,8 +203,6 @@ body {
 		width: 150px;
 	}
 }
-
-//main
 
 main {
 	position: relative;
@@ -360,7 +358,9 @@ main {
 
 		&__transport {
 			flex: 1;
-			background-image: url('../img/section-one-bg.webp');
+			background-image: url('../img/gallery-3.webp');
+			background-position: 20% 50%;
+			background-size: cover;
 		}
 
 		&__garage {
