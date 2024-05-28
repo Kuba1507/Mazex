@@ -75,6 +75,23 @@ const setCurrentYear = () => {
 	currentYearSpan.textContent = currentYear
 }
 
+const addClickEvents = () => {
+	const facebookLinks = document.querySelectorAll('.facebook-link')
+	const instagramLinks = document.querySelectorAll('.instagram-link')
+
+	facebookLinks.forEach(link => {
+		link.addEventListener('click', () => {
+			window.location.href = 'https://www.facebook.com/profile.php?id=100081866023444'
+		})
+	})
+
+	instagramLinks.forEach(link => {
+		link.addEventListener('click', () => {
+			window.location.href = 'https://www.instagram.com/mazex_transport?igsh=cTQ3eDJ0cWtqYXY0'
+		})
+	})
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	updateImageSource()
 })
@@ -95,5 +112,5 @@ burgerBtn.addEventListener('click', handleNav)
 mobileNavItems.forEach(item => {
 	item.addEventListener('click', closeNav)
 })
-
+document.addEventListener('DOMContentLoaded', addClickEvents)
 yearsAmountControl()
