@@ -431,6 +431,8 @@ main {
 		}
 
 		.garage-box {
+			display: flex;
+			flex-direction: column;
 			margin-top: 2em;
 
 			&__text {
