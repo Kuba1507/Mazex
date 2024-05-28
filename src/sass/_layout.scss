@@ -97,6 +97,10 @@ body {
 			&__image {
 				width: 65px;
 				height: 65px;
+
+				&--garage {
+					width: 100px;
+				}
 			}
 
 			&:hover {

@@ -275,22 +275,6 @@
 
 			&-facebook {
 				flex: 1 0 0;
-				// &-link {
-				// 	display: flex;
-				// 	align-items: center;
-				// 	color: $creme-white;
-				// 	text-decoration: none;
-				// 	font-size: 2rem;
-				// 	transition: color 0.3s;
-
-				// 	img {
-				// 		margin-right: 0.5em;
-				// 		width: 35px;
-				// 		height: 35px;
-				// 		border-radius: 50%;
-				// 		transition: background-color 0.3s, border 0.1s;
-				// 	}
-				// }
 
 				&:hover &-link img {
 					background-color: #4267b2;
@@ -367,6 +351,10 @@
 				&__image {
 					width: 75px;
 					height: 75px;
+
+					&--garage {
+						width: 120px;
+					}
 				}
 			}
 
