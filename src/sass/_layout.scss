@@ -989,16 +989,45 @@ main {
 
 	&__desktop {
 		display: none;
+
+		.custom-footer {
+			&__socials {
+				img {
+					width: 40px;
+					height: 40px;
+					cursor: pointer;
+				}
+
+				.facebook-link {
+					margin-right: 0.75em;
+				}
+			}
+		}
 	}
 
 	&__mobile {
+		display: flex;
+		flex-direction: column;
 		padding: 1em;
 		text-align: center;
 
 		&-content {
+			margin-top: 0.75em;
 			color: $creme-white;
 			line-height: 1.4em;
 			letter-spacing: 1px;
+		}
+
+		&-socials {
+			img {
+				width: 35px;
+				height: 35px;
+				cursor: pointer;
+			}
+
+			.facebook-link {
+				margin-right: 1em;
+			}
 		}
 	}
 }
