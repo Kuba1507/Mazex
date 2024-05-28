@@ -134,6 +134,10 @@
 					margin-left: 2em;
 				}
 			}
+
+			.garage-services {
+				margin-top: 1.5em;
+			}
 		}
 
 		.ornament {
@@ -523,6 +527,16 @@
 				&__image {
 					flex: 1;
 					margin-left: 10em;
+				}
+			}
+
+			.garage-services {
+				margin-top: 2.5em;
+
+				&-content {
+					&-list {
+						margin-top: 0.5em;
+					}
 				}
 			}
 		}
