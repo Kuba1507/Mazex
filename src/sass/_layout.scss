@@ -481,6 +481,46 @@ main {
 		}
 	}
 
+	.benefits {
+		.subsection-title {
+			text-transform: uppercase;
+		}
+
+		&-box {
+			display: flex;
+			flex-direction: column;
+			margin-top: 3em;
+
+			&__benefit {
+				display: flex;
+				margin-top: 2em;
+				font-family: 'Montserrat', sans-serif;
+
+				&-icon {
+					margin-right: 0.75em;
+					width: 40px;
+					height: 40px;
+				}
+
+				&-text {
+					&-title {
+						font-family: 'Loew', sans-serif;
+						font-size: 2rem;
+						color: $dark;
+					}
+
+					&-description {
+						font-family: 'Montserrat', sans-serif;
+						margin-top: 0.5em;
+						font-size: 1.6rem;
+						line-height: 1.3em;
+						color: $dark;
+					}
+				}
+			}
+		}
+	}
+
 	.ornament {
 		position: relative;
 		margin-top: 1em;
