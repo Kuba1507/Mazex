@@ -556,11 +556,21 @@ main {
 					text-align: center;
 					z-index: 2;
 
+					span {
+						font-weight: bold;
+					}
+
 					&--upper {
 						margin-bottom: 0.5em;
 					}
 				}
 			}
+		}
+
+		&--garage {
+			height: 350px;
+			background-image: url('../img/section-two-bg.webp');
+			background-attachment: fixed;
 		}
 
 		&__shadow {
