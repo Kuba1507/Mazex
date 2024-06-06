@@ -7,6 +7,7 @@ const mobileNavItems = document.querySelectorAll('.mobile-nav__item')
 const yearsAmount = document.querySelector('.years-number')
 const currentYearSpan = document.querySelector('.current-year')
 const emailContent = document.querySelector('.contact-block__content--email')
+const garageEmailContent = document.querySelector('.contact-block__content--garage')
 const slides = document.querySelectorAll('.swiper-slide')
 
 const showCookie = () => {
@@ -70,6 +71,14 @@ const handleResponsiveEmail = () => {
 	}
 }
 
+const handleGarageResponsiveEmail = () => {
+	if (window.innerWidth < 768) {
+		garageEmailContent.innerHTML = 'mazex.serwis<br>@gmail.com'
+	} else {
+		garageEmailContent.innerHTML = 'mazex.serwis@gmail.com'
+	}
+}
+
 const setCurrentYear = () => {
 	const currentYear = new Date().getFullYear()
 	currentYearSpan.textContent = currentYear
@@ -102,6 +111,10 @@ window.addEventListener('resize', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
 	handleResponsiveEmail()
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+	handleGarageResponsiveEmail()
 })
 
 window.addEventListener('load', setCurrentYear)

@@ -992,7 +992,8 @@ main {
 						font-family: 'Montserrat', sans-serif;
 						font-size: 2rem;
 
-						&--email {
+						&--email,
+						&--garage {
 							width: 100%;
 							text-align: center;
 						}
@@ -1147,8 +1148,6 @@ main {
 	bottom: 0;
 	width: 100%;
 }
-
-//error 404
 
 .error-404 {
 	display: flex;
