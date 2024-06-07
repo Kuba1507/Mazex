@@ -101,6 +101,24 @@ const addClickEvents = () => {
 	})
 }
 
+const addGarageClickEvents = () => {
+	const garageFacebookLinks = document.querySelectorAll('.facebook-garage-link')
+	const garageInstagramLinks = document.querySelectorAll('.instagram-garage-link')
+
+	garageFacebookLinks.forEach(link => {
+		link.addEventListener('click', () => {
+			window.location.href = 'https://www.facebook.com/profile.php?id=61560227537710'
+		})
+	})
+
+	garageInstagramLinks.forEach(link => {
+		link.addEventListener('click', () => {
+			window.location.href =
+				'https://www.instagram.com/mazex_serwis/?next=%2Fsecretmoonxo%2Ftagged%2F&locale=de&hl=am-et'
+		})
+	})
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	updateImageSource()
 })
@@ -126,4 +144,5 @@ mobileNavItems.forEach(item => {
 	item.addEventListener('click', closeNav)
 })
 document.addEventListener('DOMContentLoaded', addClickEvents)
+document.addEventListener('DOMContentLoaded', addGarageClickEvents)
 yearsAmountControl()
