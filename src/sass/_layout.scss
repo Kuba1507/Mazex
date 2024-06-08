@@ -1036,6 +1036,7 @@ main {
 			}
 			.facebook-box {
 				display: flex;
+				flex-direction: column;
 				justify-content: center;
 				align-items: center;
 				margin-top: 4em;
@@ -1050,15 +1051,12 @@ main {
 					text-align: center;
 					font-family: 'Montserrat-bold';
 					font-size: 2rem;
-					text-decoration: none;
 					color: $dark;
-					transition: color 0.3s;
 
 					img {
 						width: 35px;
 						height: 35px;
 						margin-left: 0.5em;
-						transition: transform 0.3s;
 					}
 
 					&::after {
@@ -1070,18 +1068,27 @@ main {
 						transition: 0.3s;
 						content: '';
 					}
+				}
 
-					&:hover {
-						color: grey;
+				.socials {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin-top: 2em;
+
+					.facebook-garage-link,
+					.instagram-garage-link {
+						cursor: pointer;
 					}
-				}
 
-				&:hover .facebook-link-fb img {
-					transform: scale(0.9);
-				}
+					.facebook-garage-link {
+						margin-right: 1em;
+					}
 
-				&:hover .facebook-link-fb::after {
-					width: 100%;
+					.instagram-garage-link {
+						width: 50px;
+						height: 50px;
+					}
 				}
 			}
 		}
