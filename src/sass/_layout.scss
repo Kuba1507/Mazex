@@ -1042,7 +1042,7 @@ main {
 				padding: 0 1.5em;
 				width: 100%;
 
-				.facebook-link {
+				.facebook-link-fb {
 					position: relative;
 					display: flex;
 					align-items: center;
@@ -1076,11 +1076,11 @@ main {
 					}
 				}
 
-				&:hover .facebook-link img {
+				&:hover .facebook-link-fb img {
 					transform: scale(0.9);
 				}
 
-				&:hover .facebook-link::after {
+				&:hover .facebook-link-fb::after {
 					width: 100%;
 				}
 			}
